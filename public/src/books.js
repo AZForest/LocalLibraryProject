@@ -13,11 +13,8 @@ function findBookById(books, id) {
 //You can check for the return status by looking at the 
 //first transaction in the `borrows` array.
 function partitionBooksByBorrowedStatus(books) {
-  let notReturnedArr = [];
-  let returnedArr = [];
-  books.forEach(book => {
-    book.borrows[0].returned ? returnedArr.push(book) : notReturnedArr.push(book);
-  })
+  const notReturnedArr = books.filter(book => !book.borrows[0].returned);
+  const returnedArr = books.filter(book => book.borrows[0].returned);
   return [notReturnedArr, returnedArr];
 }
 
