@@ -1,7 +1,7 @@
 # LocalLibraryProject
 
 * JavaScript Project that makes use of the various JavaScript array methods to retrieve and format data from data files (public/data/). 
-* JavaScript functions are contained in the src/ folder, with the file names: accounts.js, books.js, and home.js.
+* JavaScript functions are contained in the public/src/ folder, with the file names: accounts.js, books.js, and home.js.
 
 ## Technology
 
